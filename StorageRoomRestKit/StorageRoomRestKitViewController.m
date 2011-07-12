@@ -3,47 +3,45 @@
 //  StorageRoomRestKit
 //
 //  Created by Sascha Konietzke on 7/12/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Thriventures UG. All rights reserved.
 //
 
 #import "StorageRoomRestKitViewController.h"
 
+#import "Restaurant.h"
+#import "Announcement.h"
+
 @implementation StorageRoomRestKitViewController
 
-- (void)dealloc
-{
-    [super dealloc];
+- (IBAction)loadOneRestaurantButtonTapped {
+    [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/collections/4d960916ba05617333000005/entries/4d960917ba05617333000011" delegate:self];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+- (IBAction)loadOneAnnouncementButtonTapped {
+    [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/collections/4d96091dba0561733300001b/entries/4d96091dba05617333000021" delegate:self];    
 }
 
-#pragma mark - View lifecycle
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (IBAction)loadManyRestaurantsButtonTapped {
+    [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/collections/4d960916ba05617333000005/entries" delegate:self];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (IBAction)loadManyAnnouncementsButtonTapped {
+    [[RKObjectManager sharedManager] loadObjectsAtResourcePath:@"/collections/4d96091dba0561733300001b/entries" delegate:self];        
+}
+
+#pragma mark RKObjectLoaderDelegate methods
+
+- (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects {
+    NSLog(@"Loaded objects: %@", objects);
+}
+
+- (void)objectLoader:(RKObjectLoader*)objectLoader didFailWithError:(NSError*)error {
+	UIAlertView* alert = [[[UIAlertView alloc] initWithTitle:@"Error" 
+                                                     message:[error localizedDescription] 
+                                                    delegate:nil 
+                                           cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+	[alert show];
+	NSLog(@"Hit error: %@", error);
 }
 
 @end
