@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53485BF613CC85CD00CD117B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53485BF513CC85CD00CD117B /* UIKit.framework */; };
+		53485BF813CC85CD00CD117B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53485BF713CC85CD00CD117B /* Foundation.framework */; };
+		53485BFA13CC85CD00CD117B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53485BF913CC85CD00CD117B /* CoreGraphics.framework */; };
+		53485C0013CC85CD00CD117B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53485BFE13CC85CD00CD117B /* InfoPlist.strings */; };
+		53485C0313CC85CD00CD117B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53485C0213CC85CD00CD117B /* main.m */; };
+		53485C0613CC85CD00CD117B /* StorageRoomRestKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53485C0513CC85CD00CD117B /* StorageRoomRestKitAppDelegate.m */; };
+		53485C0913CC85CD00CD117B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53485C0713CC85CD00CD117B /* MainWindow.xib */; };
+		53485C0C13CC85CD00CD117B /* StorageRoomRestKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53485C0B13CC85CD00CD117B /* StorageRoomRestKitViewController.m */; };
+		53485C0F13CC85CD00CD117B /* StorageRoomRestKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53485C0D13CC85CD00CD117B /* StorageRoomRestKitViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53485BF113CC85CD00CD117B /* StorageRoomRestKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorageRoomRestKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53485BF513CC85CD00CD117B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53485BF713CC85CD00CD117B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53485BF913CC85CD00CD117B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53485BFD13CC85CD00CD117B /* StorageRoomRestKit-Info.plist */ = {isa = PBXFileReference; path = "StorageRoomRestKit-Info.plist"; sourceTree = "<group>"; };
+		53485BFF13CC85CD00CD117B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53485C0113CC85CD00CD117B /* StorageRoomRestKit-Prefix.pch */ = {isa = PBXFileReference; path = "StorageRoomRestKit-Prefix.pch"; sourceTree = "<group>"; };
+		53485C0213CC85CD00CD117B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53485C0413CC85CD00CD117B /* StorageRoomRestKitAppDelegate.h */ = {isa = PBXFileReference; path = StorageRoomRestKitAppDelegate.h; sourceTree = "<group>"; };
+		53485C0513CC85CD00CD117B /* StorageRoomRestKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorageRoomRestKitAppDelegate.m; sourceTree = "<group>"; };
+		53485C0813CC85CD00CD117B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		53485C0A13CC85CD00CD117B /* StorageRoomRestKitViewController.h */ = {isa = PBXFileReference; path = StorageRoomRestKitViewController.h; sourceTree = "<group>"; };
+		53485C0B13CC85CD00CD117B /* StorageRoomRestKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorageRoomRestKitViewController.m; sourceTree = "<group>"; };
+		53485C0E13CC85CD00CD117B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StorageRoomRestKitViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53485BEE13CC85CD00CD117B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53485BF613CC85CD00CD117B /* UIKit.framework in Frameworks */,
+				53485BF813CC85CD00CD117B /* Foundation.framework in Frameworks */,
+				53485BFA13CC85CD00CD117B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53485BE613CC85CD00CD117B = {
+			isa = PBXGroup;
+			children = (
+				53485BFB13CC85CD00CD117B /* StorageRoomRestKit */,
+				53485BF413CC85CD00CD117B /* Frameworks */,
+				53485BF213CC85CD00CD117B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53485BF213CC85CD00CD117B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53485BF113CC85CD00CD117B /* StorageRoomRestKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53485BF413CC85CD00CD117B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53485BF513CC85CD00CD117B /* UIKit.framework */,
+				53485BF713CC85CD00CD117B /* Foundation.framework */,
+				53485BF913CC85CD00CD117B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53485BFB13CC85CD00CD117B /* StorageRoomRestKit */ = {
+			isa = PBXGroup;
+			children = (
+				53485C0413CC85CD00CD117B /* StorageRoomRestKitAppDelegate.h */,
+				53485C0513CC85CD00CD117B /* StorageRoomRestKitAppDelegate.m */,
+				53485C0713CC85CD00CD117B /* MainWindow.xib */,
+				53485C0A13CC85CD00CD117B /* StorageRoomRestKitViewController.h */,
+				53485C0B13CC85CD00CD117B /* StorageRoomRestKitViewController.m */,
+				53485C0D13CC85CD00CD117B /* StorageRoomRestKitViewController.xib */,
+				53485BFC13CC85CD00CD117B /* Supporting Files */,
+			);
+			path = StorageRoomRestKit;
+			sourceTree = "<group>";
+		};
+		53485BFC13CC85CD00CD117B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53485BFD13CC85CD00CD117B /* StorageRoomRestKit-Info.plist */,
+				53485BFE13CC85CD00CD117B /* InfoPlist.strings */,
+				53485C0113CC85CD00CD117B /* StorageRoomRestKit-Prefix.pch */,
+				53485C0213CC85CD00CD117B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53485BF013CC85CD00CD117B /* StorageRoomRestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53485C1213CC85CD00CD117B /* Build configuration list for PBXNativeTarget "StorageRoomRestKit" */;
+			buildPhases = (
+				53485BED13CC85CD00CD117B /* Sources */,
+				53485BEE13CC85CD00CD117B /* Frameworks */,
+				53485BEF13CC85CD00CD117B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageRoomRestKit;
+			productName = StorageRoomRestKit;
+			productReference = 53485BF113CC85CD00CD117B /* StorageRoomRestKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53485BE813CC85CD00CD117B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 53485BEB13CC85CD00CD117B /* Build configuration list for PBXProject "StorageRoomRestKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53485BE613CC85CD00CD117B;
+			productRefGroup = 53485BF213CC85CD00CD117B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53485BF013CC85CD00CD117B /* StorageRoomRestKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53485BEF13CC85CD00CD117B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53485C0013CC85CD00CD117B /* InfoPlist.strings in Resources */,
+				53485C0913CC85CD00CD117B /* MainWindow.xib in Resources */,
+				53485C0F13CC85CD00CD117B /* StorageRoomRestKitViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53485BED13CC85CD00CD117B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53485C0313CC85CD00CD117B /* main.m in Sources */,
+				53485C0613CC85CD00CD117B /* StorageRoomRestKitAppDelegate.m in Sources */,
+				53485C0C13CC85CD00CD117B /* StorageRoomRestKitViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53485BFE13CC85CD00CD117B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53485BFF13CC85CD00CD117B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53485C0713CC85CD00CD117B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53485C0813CC85CD00CD117B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		53485C0D13CC85CD00CD117B /* StorageRoomRestKitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53485C0E13CC85CD00CD117B /* en */,
+			);
+			name = StorageRoomRestKitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53485C1013CC85CD00CD117B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		53485C1113CC85CD00CD117B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		53485C1313CC85CD00CD117B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorageRoomRestKit/StorageRoomRestKit-Prefix.pch";
+				INFOPLIST_FILE = "StorageRoomRestKit/StorageRoomRestKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53485C1413CC85CD00CD117B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StorageRoomRestKit/StorageRoomRestKit-Prefix.pch";
+				INFOPLIST_FILE = "StorageRoomRestKit/StorageRoomRestKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53485BEB13CC85CD00CD117B /* Build configuration list for PBXProject "StorageRoomRestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53485C1013CC85CD00CD117B /* Debug */,
+				53485C1113CC85CD00CD117B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53485C1213CC85CD00CD117B /* Build configuration list for PBXNativeTarget "StorageRoomRestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53485C1313CC85CD00CD117B /* Debug */,
+				53485C1413CC85CD00CD117B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53485BE813CC85CD00CD117B /* Project object */;
+}
